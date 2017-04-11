@@ -49,6 +49,7 @@ public class AppTest
         compareFileResults("src/test/resources/testcase5.txt");
         compareFileResults("src/test/resources/testcase6.txt");
         compareFileResults("src/test/resources/testcase8.txt");
+        compareFileResults("src/test/resources/testcase9.txt");
     }
 
     private void compareFileResults(final String filePath) throws IOException{
@@ -75,13 +76,13 @@ public class AppTest
         }
     }
  //Commented out - execution took too long
-/*
+
     public void testFileLoading(){
         File file = new File(
-                "src/test/resources/bigFilledFile.txt");
+                "src/test/resources/testcase9.txt");
         final ConsoleApp app =new ConsoleApp();
         final String[] args = {file.getAbsolutePath()} ;
         app.main(args);
     }
-*/
+
 }

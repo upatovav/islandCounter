@@ -18,7 +18,7 @@ class InputStreamParser {
 
         BufferedReader reader = new BufferedReader(inputStreamReader);
         final String mapHeader = reader.readLine();
-        if (mapHeader.contains(HEADER_SEPARATOR)) {
+        if (!mapHeader.contains(HEADER_SEPARATOR)) {
             throw new IllegalArgumentException("Space not found in first line");
         }
         final int expectedRowCount = Integer.parseInt(
